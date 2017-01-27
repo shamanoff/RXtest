@@ -27,7 +27,7 @@ public class RxtestApplication {
         SpringApplication.run(RxtestApplication.class, args);
         Stopwatch stopwatch = Stopwatch.createStarted();
 
-        rx.Observable.range(1, 10)
+        Observable.range(1, 10)
                 .flatMap(integer -> Observable.just(integer)
                 .map(RxtestApplication::doubleValue)
                 .subscribeOn(Schedulers.computation())
