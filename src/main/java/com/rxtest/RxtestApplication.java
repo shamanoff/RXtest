@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import rx.Observable;
 import rx.schedulers.Schedulers;
 
+
 @SpringBootApplication
 public class RxtestApplication {
 
@@ -38,6 +39,18 @@ public class RxtestApplication {
 
         stopwatch.stop();
         System.out.println(stopwatch);
+
+    /*    String names[] = {"E", "C", "D"};
+        System.out.println(Arrays.toString(names));
+
+        List count = Arrays.stream(names)
+                .filter(n -> {
+                    System.out.println(n);
+                    return n.equals("E");
+                })
+                .collect(toList());
+
+        System.out.println(count.toString());*/
 
     }
 }
